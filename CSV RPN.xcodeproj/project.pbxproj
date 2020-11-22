@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3013D317256A98BB006E6E19 /* CSVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3013D316256A98BB006E6E19 /* CSVCell.swift */; };
+		3013D338256AA7A5006E6E19 /* CSVParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3013D337256AA7A5006E6E19 /* CSVParserProtocol.swift */; };
+		3013D343256AA856006E6E19 /* ArithmeticExpressionParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3013D342256AA856006E6E19 /* ArithmeticExpressionParserProtocol.swift */; };
+		3013D349256AA8D2006E6E19 /* CSVPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3013D348256AA8D2006E6E19 /* CSVPresenter.swift */; };
+		3013D357256AAB58006E6E19 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3013D356256AAB58006E6E19 /* Protocols.swift */; };
+		3013D362256AAC60006E6E19 /* CSVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3013D361256AAC60006E6E19 /* CSVViewModel.swift */; };
+		30353AFA2567C2C700831E7A /* ArithmeticExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353AF92567C2C700831E7A /* ArithmeticExpressionParser.swift */; };
+		30353B1F2567CEF500831E7A /* PostFixExpressionEvaluater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B1E2567CEF500831E7A /* PostFixExpressionEvaluater.swift */; };
+		30353B292567D2D800831E7A /* ArithmeticExpressionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B282567D2D800831E7A /* ArithmeticExpressionError.swift */; };
+		30353B312567D3D100831E7A /* ExpressionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B302567D3D100831E7A /* ExpressionResult.swift */; };
+		30353B3F2567D73D00831E7A /* ExpressionEvaluaterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B3E2567D73D00831E7A /* ExpressionEvaluaterError.swift */; };
+		30353B442567D75800831E7A /* ArithmeticExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B432567D75800831E7A /* ArithmeticExpression.swift */; };
+		30353B692567D99200831E7A /* ArithmeticOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B682567D99200831E7A /* ArithmeticOperator.swift */; };
+		30353B7D2567DC7800831E7A /* ArithmeticOperator+Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B7C2567DC7800831E7A /* ArithmeticOperator+Evaluate.swift */; };
+		30353B882567FA2400831E7A /* ArithmeticExpressionEvaluater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30353B872567FA2400831E7A /* ArithmeticExpressionEvaluater.swift */; };
+		3048C917256ABE60004E4033 /* CSVCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048C916256ABE60004E4033 /* CSVCollectionViewCell.swift */; };
+		3069DD8C25656E4B00EE1A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DD8B25656E4B00EE1A74 /* AppDelegate.swift */; };
+		3069DD8E25656E4B00EE1A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DD8D25656E4B00EE1A74 /* SceneDelegate.swift */; };
+		3069DD9025656E4B00EE1A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DD8F25656E4B00EE1A74 /* ViewController.swift */; };
+		3069DD9325656E4B00EE1A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3069DD9125656E4B00EE1A74 /* Main.storyboard */; };
+		3069DD9525656E4C00EE1A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3069DD9425656E4C00EE1A74 /* Assets.xcassets */; };
+		3069DD9825656E4C00EE1A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3069DD9625656E4C00EE1A74 /* LaunchScreen.storyboard */; };
+		3069DDA325656E4C00EE1A74 /* CSV_RPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DDA225656E4C00EE1A74 /* CSV_RPNTests.swift */; };
+		3069DDAE25656E4C00EE1A74 /* CSV_RPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DDAD25656E4C00EE1A74 /* CSV_RPNUITests.swift */; };
+		3069DDBF25656E9800EE1A74 /* rpn-csv in Resources */ = {isa = PBXBuildFile; fileRef = 3069DDBE25656E9800EE1A74 /* rpn-csv */; };
+		3069DDD2256570AE00EE1A74 /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DDD1256570AE00EE1A74 /* CSVParser.swift */; };
+		3069DDDA25657F5E00EE1A74 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DDD925657F5E00EE1A74 /* Array+Extension.swift */; };
+		3069DDDF2565801A00EE1A74 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3069DDDE2565801A00EE1A74 /* CSV.swift */; };
+		30AA2114256A8D0F0007B809 /* CSVParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA2113256A8D0F0007B809 /* CSVParserError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3069DD9F25656E4C00EE1A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3069DD8025656E4B00EE1A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3069DD8725656E4B00EE1A74;
+			remoteInfo = "CSV RPN";
+		};
+		3069DDAA25656E4C00EE1A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3069DD8025656E4B00EE1A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3069DD8725656E4B00EE1A74;
+			remoteInfo = "CSV RPN";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3013D316256A98BB006E6E19 /* CSVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVCell.swift; sourceTree = "<group>"; };
+		3013D337256AA7A5006E6E19 /* CSVParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParserProtocol.swift; sourceTree = "<group>"; };
+		3013D342256AA856006E6E19 /* ArithmeticExpressionParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticExpressionParserProtocol.swift; sourceTree = "<group>"; };
+		3013D348256AA8D2006E6E19 /* CSVPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVPresenter.swift; sourceTree = "<group>"; };
+		3013D356256AAB58006E6E19 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		3013D361256AAC60006E6E19 /* CSVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVViewModel.swift; sourceTree = "<group>"; };
+		30353AF92567C2C700831E7A /* ArithmeticExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticExpressionParser.swift; sourceTree = "<group>"; };
+		30353B1E2567CEF500831E7A /* PostFixExpressionEvaluater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFixExpressionEvaluater.swift; sourceTree = "<group>"; };
+		30353B282567D2D800831E7A /* ArithmeticExpressionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticExpressionError.swift; sourceTree = "<group>"; };
+		30353B302567D3D100831E7A /* ExpressionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionResult.swift; sourceTree = "<group>"; };
+		30353B3E2567D73D00831E7A /* ExpressionEvaluaterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionEvaluaterError.swift; sourceTree = "<group>"; };
+		30353B432567D75800831E7A /* ArithmeticExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticExpression.swift; sourceTree = "<group>"; };
+		30353B682567D99200831E7A /* ArithmeticOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperator.swift; sourceTree = "<group>"; };
+		30353B7C2567DC7800831E7A /* ArithmeticOperator+Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArithmeticOperator+Evaluate.swift"; sourceTree = "<group>"; };
+		30353B872567FA2400831E7A /* ArithmeticExpressionEvaluater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticExpressionEvaluater.swift; sourceTree = "<group>"; };
+		3048C916256ABE60004E4033 /* CSVCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVCollectionViewCell.swift; sourceTree = "<group>"; };
+		3069DD8825656E4B00EE1A74 /* CSV RPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSV RPN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3069DD8B25656E4B00EE1A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3069DD8D25656E4B00EE1A74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3069DD8F25656E4B00EE1A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3069DD9225656E4B00EE1A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3069DD9425656E4C00EE1A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3069DD9725656E4C00EE1A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3069DD9925656E4C00EE1A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3069DD9E25656E4C00EE1A74 /* CSV RPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CSV RPNTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3069DDA225656E4C00EE1A74 /* CSV_RPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV_RPNTests.swift; sourceTree = "<group>"; };
+		3069DDA425656E4C00EE1A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3069DDA925656E4C00EE1A74 /* CSV RPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CSV RPNUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3069DDAD25656E4C00EE1A74 /* CSV_RPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV_RPNUITests.swift; sourceTree = "<group>"; };
+		3069DDAF25656E4C00EE1A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3069DDBE25656E9800EE1A74 /* rpn-csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "rpn-csv"; sourceTree = "<group>"; };
+		3069DDD1256570AE00EE1A74 /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		3069DDD925657F5E00EE1A74 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		3069DDDE2565801A00EE1A74 /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		30AA2113256A8D0F0007B809 /* CSVParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParserError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3069DD8525656E4B00EE1A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3069DD9B25656E4C00EE1A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3069DDA625656E4C00EE1A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3013D347256AA8A9006E6E19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3013D355256AAB45006E6E19 /* CSV */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3013D355256AAB45006E6E19 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				3013D356256AAB58006E6E19 /* Protocols.swift */,
+				3013D348256AA8D2006E6E19 /* CSVPresenter.swift */,
+				3013D361256AAC60006E6E19 /* CSVViewModel.swift */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
+		30353AF82567C2A000831E7A /* ArithmeticExpressionEvaluater */ = {
+			isa = PBXGroup;
+			children = (
+				30353B872567FA2400831E7A /* ArithmeticExpressionEvaluater.swift */,
+				30353B7C2567DC7800831E7A /* ArithmeticOperator+Evaluate.swift */,
+				30353B302567D3D100831E7A /* ExpressionResult.swift */,
+				30353B3E2567D73D00831E7A /* ExpressionEvaluaterError.swift */,
+				30353B242567D0AA00831E7A /* PostfixExpressionEvaluater */,
+			);
+			path = ArithmeticExpressionEvaluater;
+			sourceTree = "<group>";
+		};
+		30353B232567D09700831E7A /* ArithmeticExpressionParser */ = {
+			isa = PBXGroup;
+			children = (
+				3013D342256AA856006E6E19 /* ArithmeticExpressionParserProtocol.swift */,
+				30353AF92567C2C700831E7A /* ArithmeticExpressionParser.swift */,
+				30353B432567D75800831E7A /* ArithmeticExpression.swift */,
+				30353B682567D99200831E7A /* ArithmeticOperator.swift */,
+				30353B282567D2D800831E7A /* ArithmeticExpressionError.swift */,
+			);
+			path = ArithmeticExpressionParser;
+			sourceTree = "<group>";
+		};
+		30353B242567D0AA00831E7A /* PostfixExpressionEvaluater */ = {
+			isa = PBXGroup;
+			children = (
+				30353B1E2567CEF500831E7A /* PostFixExpressionEvaluater.swift */,
+			);
+			path = PostfixExpressionEvaluater;
+			sourceTree = "<group>";
+		};
+		30353B552567D83A00831E7A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				3069DDD02565707E00EE1A74 /* CSVParser */,
+				30353B232567D09700831E7A /* ArithmeticExpressionParser */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		3048C91B256ABE66004E4033 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3048C91C256ABE6D004E4033 /* CSV */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3048C91C256ABE6D004E4033 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				3069DD8F25656E4B00EE1A74 /* ViewController.swift */,
+				3048C916256ABE60004E4033 /* CSVCollectionViewCell.swift */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
+		3069DD7F25656E4B00EE1A74 = {
+			isa = PBXGroup;
+			children = (
+				3069DD8A25656E4B00EE1A74 /* CSV RPN */,
+				3069DDA125656E4C00EE1A74 /* CSV RPNTests */,
+				3069DDAC25656E4C00EE1A74 /* CSV RPNUITests */,
+				3069DD8925656E4B00EE1A74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3069DD8925656E4B00EE1A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3069DD8825656E4B00EE1A74 /* CSV RPN.app */,
+				3069DD9E25656E4C00EE1A74 /* CSV RPNTests.xctest */,
+				3069DDA925656E4C00EE1A74 /* CSV RPNUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3069DD8A25656E4B00EE1A74 /* CSV RPN */ = {
+			isa = PBXGroup;
+			children = (
+				3096DAA5256ACBBB0097BF26 /* UI */,
+				3048C91B256ABE66004E4033 /* View */,
+				3013D347256AA8A9006E6E19 /* Presenter */,
+				30353B552567D83A00831E7A /* Parser */,
+				30353AF82567C2A000831E7A /* ArithmeticExpressionEvaluater */,
+				3069DDC725656FE700EE1A74 /* Utils */,
+				3069DD8B25656E4B00EE1A74 /* AppDelegate.swift */,
+				3069DD8D25656E4B00EE1A74 /* SceneDelegate.swift */,
+				3069DD9425656E4C00EE1A74 /* Assets.xcassets */,
+				3069DD9925656E4C00EE1A74 /* Info.plist */,
+				3069DDBE25656E9800EE1A74 /* rpn-csv */,
+			);
+			path = "CSV RPN";
+			sourceTree = "<group>";
+		};
+		3069DDA125656E4C00EE1A74 /* CSV RPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				3069DDA225656E4C00EE1A74 /* CSV_RPNTests.swift */,
+				3069DDA425656E4C00EE1A74 /* Info.plist */,
+			);
+			path = "CSV RPNTests";
+			sourceTree = "<group>";
+		};
+		3069DDAC25656E4C00EE1A74 /* CSV RPNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3069DDAD25656E4C00EE1A74 /* CSV_RPNUITests.swift */,
+				3069DDAF25656E4C00EE1A74 /* Info.plist */,
+			);
+			path = "CSV RPNUITests";
+			sourceTree = "<group>";
+		};
+		3069DDC725656FE700EE1A74 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3069DDD925657F5E00EE1A74 /* Array+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3069DDD02565707E00EE1A74 /* CSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				3013D337256AA7A5006E6E19 /* CSVParserProtocol.swift */,
+				3069DDD1256570AE00EE1A74 /* CSVParser.swift */,
+				3069DDDE2565801A00EE1A74 /* CSV.swift */,
+				3013D316256A98BB006E6E19 /* CSVCell.swift */,
+				30AA2113256A8D0F0007B809 /* CSVParserError.swift */,
+			);
+			path = CSVParser;
+			sourceTree = "<group>";
+		};
+		3096DAA5256ACBBB0097BF26 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3069DD9125656E4B00EE1A74 /* Main.storyboard */,
+				3069DD9625656E4C00EE1A74 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3069DD8725656E4B00EE1A74 /* CSV RPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3069DDB225656E4C00EE1A74 /* Build configuration list for PBXNativeTarget "CSV RPN" */;
+			buildPhases = (
+				3069DD8425656E4B00EE1A74 /* Sources */,
+				3069DD8525656E4B00EE1A74 /* Frameworks */,
+				3069DD8625656E4B00EE1A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CSV RPN";
+			productName = "CSV RPN";
+			productReference = 3069DD8825656E4B00EE1A74 /* CSV RPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3069DD9D25656E4C00EE1A74 /* CSV RPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3069DDB525656E4C00EE1A74 /* Build configuration list for PBXNativeTarget "CSV RPNTests" */;
+			buildPhases = (
+				3069DD9A25656E4C00EE1A74 /* Sources */,
+				3069DD9B25656E4C00EE1A74 /* Frameworks */,
+				3069DD9C25656E4C00EE1A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3069DDA025656E4C00EE1A74 /* PBXTargetDependency */,
+			);
+			name = "CSV RPNTests";
+			productName = "CSV RPNTests";
+			productReference = 3069DD9E25656E4C00EE1A74 /* CSV RPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3069DDA825656E4C00EE1A74 /* CSV RPNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3069DDB825656E4C00EE1A74 /* Build configuration list for PBXNativeTarget "CSV RPNUITests" */;
+			buildPhases = (
+				3069DDA525656E4C00EE1A74 /* Sources */,
+				3069DDA625656E4C00EE1A74 /* Frameworks */,
+				3069DDA725656E4C00EE1A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3069DDAB25656E4C00EE1A74 /* PBXTargetDependency */,
+			);
+			name = "CSV RPNUITests";
+			productName = "CSV RPNUITests";
+			productReference = 3069DDA925656E4C00EE1A74 /* CSV RPNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3069DD8025656E4B00EE1A74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					3069DD8725656E4B00EE1A74 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					3069DD9D25656E4C00EE1A74 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 3069DD8725656E4B00EE1A74;
+					};
+					3069DDA825656E4C00EE1A74 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 3069DD8725656E4B00EE1A74;
+					};
+				};
+			};
+			buildConfigurationList = 3069DD8325656E4B00EE1A74 /* Build configuration list for PBXProject "CSV RPN" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3069DD7F25656E4B00EE1A74;
+			productRefGroup = 3069DD8925656E4B00EE1A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3069DD8725656E4B00EE1A74 /* CSV RPN */,
+				3069DD9D25656E4C00EE1A74 /* CSV RPNTests */,
+				3069DDA825656E4C00EE1A74 /* CSV RPNUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3069DD8625656E4B00EE1A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3069DDBF25656E9800EE1A74 /* rpn-csv in Resources */,
+				3069DD9825656E4C00EE1A74 /* LaunchScreen.storyboard in Resources */,
+				3069DD9525656E4C00EE1A74 /* Assets.xcassets in Resources */,
+				3069DD9325656E4B00EE1A74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3069DD9C25656E4C00EE1A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3069DDA725656E4C00EE1A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3069DD8425656E4B00EE1A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30353B312567D3D100831E7A /* ExpressionResult.swift in Sources */,
+				3048C917256ABE60004E4033 /* CSVCollectionViewCell.swift in Sources */,
+				3069DDD2256570AE00EE1A74 /* CSVParser.swift in Sources */,
+				3013D317256A98BB006E6E19 /* CSVCell.swift in Sources */,
+				3013D357256AAB58006E6E19 /* Protocols.swift in Sources */,
+				30353B3F2567D73D00831E7A /* ExpressionEvaluaterError.swift in Sources */,
+				3069DD9025656E4B00EE1A74 /* ViewController.swift in Sources */,
+				3069DDDA25657F5E00EE1A74 /* Array+Extension.swift in Sources */,
+				3013D349256AA8D2006E6E19 /* CSVPresenter.swift in Sources */,
+				30353B292567D2D800831E7A /* ArithmeticExpressionError.swift in Sources */,
+				30353B692567D99200831E7A /* ArithmeticOperator.swift in Sources */,
+				30AA2114256A8D0F0007B809 /* CSVParserError.swift in Sources */,
+				3069DD8C25656E4B00EE1A74 /* AppDelegate.swift in Sources */,
+				30353B882567FA2400831E7A /* ArithmeticExpressionEvaluater.swift in Sources */,
+				3013D338256AA7A5006E6E19 /* CSVParserProtocol.swift in Sources */,
+				30353B442567D75800831E7A /* ArithmeticExpression.swift in Sources */,
+				3069DDDF2565801A00EE1A74 /* CSV.swift in Sources */,
+				30353B7D2567DC7800831E7A /* ArithmeticOperator+Evaluate.swift in Sources */,
+				3013D343256AA856006E6E19 /* ArithmeticExpressionParserProtocol.swift in Sources */,
+				3069DD8E25656E4B00EE1A74 /* SceneDelegate.swift in Sources */,
+				30353AFA2567C2C700831E7A /* ArithmeticExpressionParser.swift in Sources */,
+				30353B1F2567CEF500831E7A /* PostFixExpressionEvaluater.swift in Sources */,
+				3013D362256AAC60006E6E19 /* CSVViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3069DD9A25656E4C00EE1A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3069DDA325656E4C00EE1A74 /* CSV_RPNTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3069DDA525656E4C00EE1A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3069DDAE25656E4C00EE1A74 /* CSV_RPNUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3069DDA025656E4C00EE1A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3069DD8725656E4B00EE1A74 /* CSV RPN */;
+			targetProxy = 3069DD9F25656E4C00EE1A74 /* PBXContainerItemProxy */;
+		};
+		3069DDAB25656E4C00EE1A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3069DD8725656E4B00EE1A74 /* CSV RPN */;
+			targetProxy = 3069DDAA25656E4C00EE1A74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3069DD9125656E4B00EE1A74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3069DD9225656E4B00EE1A74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3069DD9625656E4C00EE1A74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3069DD9725656E4C00EE1A74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3069DDB025656E4C00EE1A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3069DDB125656E4C00EE1A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3069DDB325656E4C00EE1A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3LVJ4T82X;
+				INFOPLIST_FILE = "CSV RPN/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = srinivasan.csv.postfix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3069DDB425656E4C00EE1A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3LVJ4T82X;
+				INFOPLIST_FILE = "CSV RPN/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = srinivasan.csv.postfix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3069DDB625656E4C00EE1A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3LVJ4T82X;
+				INFOPLIST_FILE = "CSV RPNTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srinivasan.CSV-RPNTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSV RPN.app/CSV RPN";
+			};
+			name = Debug;
+		};
+		3069DDB725656E4C00EE1A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3LVJ4T82X;
+				INFOPLIST_FILE = "CSV RPNTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srinivasan.CSV-RPNTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSV RPN.app/CSV RPN";
+			};
+			name = Release;
+		};
+		3069DDB925656E4C00EE1A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3LVJ4T82X;
+				INFOPLIST_FILE = "CSV RPNUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srinivasan.CSV-RPNUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CSV RPN";
+			};
+			name = Debug;
+		};
+		3069DDBA25656E4C00EE1A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3LVJ4T82X;
+				INFOPLIST_FILE = "CSV RPNUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srinivasan.CSV-RPNUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CSV RPN";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3069DD8325656E4B00EE1A74 /* Build configuration list for PBXProject "CSV RPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3069DDB025656E4C00EE1A74 /* Debug */,
+				3069DDB125656E4C00EE1A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3069DDB225656E4C00EE1A74 /* Build configuration list for PBXNativeTarget "CSV RPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3069DDB325656E4C00EE1A74 /* Debug */,
+				3069DDB425656E4C00EE1A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3069DDB525656E4C00EE1A74 /* Build configuration list for PBXNativeTarget "CSV RPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3069DDB625656E4C00EE1A74 /* Debug */,
+				3069DDB725656E4C00EE1A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3069DDB825656E4C00EE1A74 /* Build configuration list for PBXNativeTarget "CSV RPNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3069DDB925656E4C00EE1A74 /* Debug */,
+				3069DDBA25656E4C00EE1A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3069DD8025656E4B00EE1A74 /* Project object */;
+}
